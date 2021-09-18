@@ -14,12 +14,12 @@
   justify-content: center;
 
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: #0038ff;
 }
 
 .wrapper {
-  width: 30%;
+  width: 700px;
 }
 
 .banner-btn {
@@ -28,15 +28,36 @@
   align-items: center;
 
   width: 100%;
-  height: 60px;
+  height: 70px;
   border-radius: 50px;
 
   font-size: 30px;
   text-transform: uppercase;
   color: #0038ff;
   background: #ffffff;
+  transition: ease-out 0.3s;
 }
+
 .banner-btn a {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 48px;
   color: #0038ff;
+}
+
+.banner-btn a::after {
+  display: block;
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-left: 15px;
+  background-size: 34px;
+  background-image: url("../../assets/images/man-computer-emoji.png");
+  background-repeat: no-repeat;
+}
+
+.banner-btn:hover {
+  transform: scale(1.1);
 }
 </style>

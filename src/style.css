@@ -19,6 +19,18 @@ a {
     text-decoration: none;
 }
 
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #0038ff;
+}
+
 /*-------------/*-------------/*------    F O N T S    ------/*-------------/*------------- */
 
 @font-face {
@@ -48,6 +60,5 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
 }

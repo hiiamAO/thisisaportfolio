@@ -39,6 +39,7 @@ header {
   padding-top: 35px;
 
   font-size: 35px;
+  text-transform: uppercase;
 }
 
 .router-link-active {
