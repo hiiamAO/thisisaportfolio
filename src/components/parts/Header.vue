@@ -45,6 +45,12 @@ header {
 .router-link-active {
   color: #0038ff;
 }
+.menu-link a{
+  transition: all 0.4s;
+}
+.menu-link a:hover {
+  color: #0038ff;
+}
 
 @media screen and (max-width: 600px) {
   .header {

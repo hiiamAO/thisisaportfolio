@@ -17,6 +17,9 @@
             quae?
           </p>
         </div>
+        <br />
+        <h1>SKETCH DE PARIS + FLECHE " I LIVE HERE "</h1>
+        <br />
       </div>
     </div>
     <Banner />
@@ -48,21 +51,23 @@ export default {
   align-items: center;
 
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 .left {
-  width: 40%;
+  width: 50%;
+  margin-top: -200px;
 }
 .right {
-  width: 60%;
+  width: 50%;
+  margin-top: -200px;
 }
 
 .about-text {
-  padding: 100px;
+  padding: 80px;
 }
 
 .about-text span {
-  font-family: "Pangolin";
+  font-family: "GloriaHallelujah" !important;
   font-size: 130px;
   color: #0038ff;
 }
@@ -77,21 +82,27 @@ export default {
   .about-text {
     padding: 50px;
   }
+  .about-text p {
+    font-size: 40px;
+    line-height: 55px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .left {
     width: 100%;
   }
+
   .right {
     width: 100%;
   }
+
   .about-text span {
     font-size: 100px;
   }
 
   .about-text p {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
   }
 }

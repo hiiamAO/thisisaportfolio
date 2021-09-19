@@ -20,11 +20,11 @@ const routes = [
     name: 'About',
     component: () => import('../views/About.vue')
   },
-  {
-    path: '/project',
-    name: 'Project',
-    component: () => import('../views/Project.vue')
-  }
+{
+  path: '/project/sumsearch',
+  name: 'SumSearch',
+  component: () => import('../views/project/Sumsearch.vue')
+}
 ]
 
 const router = new VueRouter({

@@ -7,7 +7,7 @@
     <div class="project-list">
       <ul>
         <li v-for="project in projects" :key="project.project">
-          <router-link :to="{ path: project.project }">{{
+          <router-link :to="{ path: project.link }">{{
             project.project
           }}</router-link>
         </li>
@@ -33,11 +33,11 @@ export default {
   data: function () {
     return {
       projects: [
-        { project: "riot" },
-        { project: "supremesearcher" },
-        { project: "mountain" },
-        { project: "canicop" },
-        { project: "Project #5" },
+        { project: "riot", link: "project/sumsearch" },
+        { project: "supremesearcher", link: "project/sumsearch" },
+        { project: "mountain", link: "project/sumsearch" },
+        { project: "canicop", link: "project/sumsearch" },
+        { project: "Project #5", link: "project/sumsearch" },
       ],
     };
   },
@@ -56,8 +56,10 @@ export default {
 
 .scroll span {
   font-family: "Pangolin" !important;
+  font-family: "GloriaHallelujah" !important;
   color: #0038ff;
-  font-size: 80px;
+  font-size: 130px;
+  line-height: 75px;
 }
 
 .project-list {
@@ -65,7 +67,7 @@ export default {
   justify-content: center;
 
   width: 100%;
-  padding-top: 150px;
+  padding-top: 180px;
   text-align: center;
 }
 ul {
