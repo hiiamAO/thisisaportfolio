@@ -34,7 +34,7 @@ export default {
     return {
       projects: [
         { project: "riot", link: "project/sumsearch" },
-        { project: "supremesearcher", link: "project/sumsearch" },
+        { project: "s.searcher", link: "project/sumsearch" },
         { project: "mountain", link: "project/sumsearch" },
         { project: "canicop", link: "project/sumsearch" },
         { project: "Project #5", link: "project/sumsearch" },
@@ -58,8 +58,8 @@ export default {
   font-family: "Pangolin" !important;
   font-family: "GloriaHallelujah" !important;
   color: #0038ff;
-  font-size: 130px;
-  line-height: 75px;
+  font-size: 90px;
+  line-height: 50px;
 }
 
 .project-list {
@@ -78,7 +78,7 @@ ul {
 }
 
 ul li {
-  font-size: 150px;
+  font-size: 8vw;
   text-transform: uppercase;
   transition: ease-in background 0.1s;
 }
@@ -98,14 +98,9 @@ ul li a:hover {
   color: #ffffff !important;
 }
 
-@media screen and (max-width: 1500px) {
-  ul {
-    width: 90%;
-  }
-
-  ul li {
-    font-size: 100px;
-    padding: 30px;
+@media screen and (min-width: 1500px) {
+  .project-list {
+    height: 110vh;
   }
 }
 
@@ -113,26 +108,8 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 900px) {
-  ul li {
-    font-size: 60px;
-  }
 }
 
 @media screen and (max-width: 600px) {
-  .project-list {
-    padding-top: 60px;
-  }
-  .scroll {
-    height: 33vh;
-  }
-
-  ul {
-    width: 100%;
-    height: 50vh;
-  }
-
-  ul li {
-    font-size: 35px;
-  }
 }
 </style>
